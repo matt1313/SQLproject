@@ -15,7 +15,18 @@ search = input("""What movie info would you like to see?
 #     title = input('What movie title would you like? ')
 #
 #
-#     cur.execute("SELECT ")
+#     cur.execute
+#
+# if search == 'y':
+#     rd = input('What year would you like? ')
+#
+#     cur.execute
+#
+#
+# if search == 'd':
+#     director = input("Which director would you like? ")
+#
+#     cur.execute
 
 
 if search == '':
@@ -29,4 +40,4 @@ if search == '':
     cur.execute("INSERT INTO Movies (Title, ReleaseYear, Genre, Director, Budget, Gross) VALUES (%s %s %s %s %s %s)", (title, rd, genre, director, budget, gross))
     cur.execute("SELECT * from Movies WHERE title = '{}';".format(title))
     abcd = cur.fetchall()
-    print(asdf)
+    print(abcd)

@@ -39,5 +39,4 @@ if search == '':
 
     cur.execute("INSERT INTO Movies (Title, ReleaseYear, Genre, Director, Budget, Gross) VALUES (%s %s %s %s %s %s)", (title, rd, genre, director, budget, gross))
     cur.execute("SELECT * from Movies WHERE title = '{}';".format(title))
-    abcd = cur.fetchall()
-    print(abcd)
+    
